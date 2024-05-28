@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <!--Se haen las referencias para enlazar los otros archivos-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="../ejercicio de pestaña/pestaña.css"/>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../ejercicio de pestaña/pestaña.js"></script>
+        
+        <title></title>
+    </head>
+    <!--Manda a cargar el javasrip para las pestañas-->
+    <body onload="javascript:cambiarPestanna(pestanas,pestana1);">
+      <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <div class="contenedor">
+            <div class="titulo">MUNDO DIVERTIDO</div>
+            <div id="pestanas">
+                <!--Se crea una lista para poder crar las pestañas-->
+                <ul id=lista>
+                    <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Inicio</a></li>
+                    <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Sobre Nosotros</a></li>
+                    <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>Galeria</a></li>
+                    <li id="pestana4"><a href='javascript:cambiarPestanna(pestanas,pestana4);'>Contacto</a></li>
+                </ul>
+            </div>
+       
+            <div id="contenidopestanas">
+                <div id="cpestana1">
+                   <h1>Somos un parque de atracciones</h1>
+                   <img src="../ejercicio de pestaña/logo.avif"/>
+                </div>
+                <div id="cpestana2">
+                    <h1>Nos especializamos en brindarle una experiencia a quellos pequeños un dia inolvidable.</h1>
+                    <img src="../ejercicio de pestaña/juego.avif" width="500" height="600">
+                </div>
+                <div id="cpestana3">
+                    <img src="../ejercicio de pestaña/diversian-adicional-1.avif"/>
+                    <img src="../ejercicio de pestaña/diversian-adicional-2.avif"/>
+                    <img src="../ejercicio de pestaña/diversian-adicional-3.avif"/>
+                    <img src="../ejercicio de pestaña/diversian-para-todas-las-edades-2.avif"/>
+                    <img src="../ejercicio de pestaña/diversian-para-todas-las-edades-3.avif"/>
+                    <img src="../ejercicio de pestaña/zona-infantil-2.avif"/>
+                </div>
+                <div id="cpestana4">
+                    <form action="formulario.php" method="POST">
+                        <table align="center">
+                            <tr>
+                                <th>NOMBRE:</th>
+                                <th>APELLIDOS:</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="nombre"></td>
+                                <td><input type="text" name="apellidos"></td>
+                            </tr>
+                            <tr>
+                                <th>EDAD:</th>
+                                <th>SEXO:</th>
+                            </tr>
+                            <tr>
+                                <td><input type="number" name="edad"></td>
+                                <td><select name="sexo" required><option value="masculino">Masculino</option><option value="femenino">Femenino</option></td>
+                            </tr>
+                            <tr>
+                                <th>CIUDAD:</th>
+                                <th>CELULAR(10 DIGITOS):</th>
+                            </tr>
+                            <tr>
+                                <td><select name="ciudad" required><option value="mexicali">Mexicali</option><option value="tijuana">Tijuana</option><option value="rosarito">Rosarito</option><option value="ensenada">Ensenada</option><option value="tecate">Tecate</option><option value="sanquintin">San quintin</option><option value="sanfelipe">San felipe</option></td>
+                                <td><input type="number" name="celular"></td>
+                            </tr>
+                            <tr>
+                                <th>COMENTARIOS</th>
+                            </tr>
+                            <tr>
+                                <td><textarea name="comentarios" rows="4"cols="30"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" name="registro" value="Enviar"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
